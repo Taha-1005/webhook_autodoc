@@ -9,7 +9,7 @@ from typing import Dict, Any, List
 from dotenv import load_dotenv
 
 from api.web_hook.github_service import get_repo_file_tree, get_repo_readme
-from api.web_hook.utils import extract_wiki_structure_xml, parse_wiki_structure, generate_llms_txt
+from api.web_hook.wiki_data_processor import extract_wiki_structure_xml, parse_wiki_structure, generate_llms_txt
 from api.web_hook.github_models import GithubPushEvent, WikiStructure, WikiPageDetail, WikiSection
 from api.web_hook.github_prompts import generate_wiki_structure_prompt, generate_wiki_page_prompt
 from api.web_hook.github_api_helpers import parse_wiki_sections_from_xml
